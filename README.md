@@ -29,6 +29,21 @@ php artisan config:cache
 
 https://laratrust.santigarcor.me/docs/6.x/
 
+https://laravel.com/docs/7.x/seeding
+
+
+After being configurated laratrust_seeder.php in app/config directory we can run following commands:
+
+```
+php artisan migrate
+```
+
+```
+php artisan db:seed
+```
+
+
+
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
