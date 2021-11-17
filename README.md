@@ -31,8 +31,7 @@ https://laratrust.santigarcor.me/docs/6.x/
 
 https://laravel.com/docs/7.x/seeding
 
-
-After being configurated laratrust_seeder.php in app/config directory we can run following commands:
+After being configurated laratrust_seeder.php in app/config directory we can run following commands to implement roles and permissions for the users:
 
 ```
 php artisan migrate
