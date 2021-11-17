@@ -20,6 +20,17 @@ npm install
 npm run dev
 ```
 
+This command clears the cached config file as mentioned above and recaches the latest configurations into a single file again.
+
+```
+php artisan config:cache
+```
+## About Laratrust
+
+https://laratrust.santigarcor.me/docs/6.x/
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
