@@ -2212,10 +2212,23 @@ Vue.component('example-component', (__webpack_require__(/*! ./components/Example
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+// const app = new Vue({
+//     el: '#app',
+// });
 
-var app = new Vue({
-  el: '#app'
-});
+$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+  });
+}); // $(document).ready(function () {
+//     $('#sidebarCollapse').on('click', function () {
+//         $('#sidebar').toggleClass('active');
+//     });
+//      $('#sidebar ul li').on('click', function () {
+//          $('#sidebar ul .active').removeClass('active');
+//         $(this).addClass('active');
+//     });
+// });
 
 /***/ }),
 

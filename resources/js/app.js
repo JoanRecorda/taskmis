@@ -27,6 +27,22 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
+// const app = new Vue({
+//     el: '#app',
+// });
+
+$(document).ready(function(){
+    $('#sidebarCollapse').on('click', function(){
+        $('#sidebar').toggleClass('active');
+    });
 });
+
+// $(document).ready(function () {
+//     $('#sidebarCollapse').on('click', function () {
+//         $('#sidebar').toggleClass('active');
+//     });
+//      $('#sidebar ul li').on('click', function () {
+//          $('#sidebar ul .active').removeClass('active');
+//         $(this).addClass('active');
+//     });
+// });
