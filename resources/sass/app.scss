@@ -9,10 +9,10 @@
 
 $fa-font-path: "http://localhost/taskmis/node_modules/@fortawesome/fontawesome-free/webfonts/";
 
-@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@import '~@fortawesome/fontawesome-free/scss/solid.scss';
-@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
-@import 'helpers.scss';
-@import 'admin.scss';
-@import 'user.scss';
+@import "helpers.scss";
+@import "admin.scss";
+@import "user.scss";
