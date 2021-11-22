@@ -22,10 +22,11 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <!-- {{ config('app.name', 'Laravel') }} -->
+                    Task Tracking System
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -75,53 +76,7 @@
 
         <div class="wrapper">
             <!-- Sidebar -->
-            <nav id="sidebar">
-                <div>
-                    <i class="fa fa-user-alt"></i><h3 class="d-inline m-l-10">Administrator</h3>
-                </div>   
-
-                <ul class="list-unstyled components">
-                    <li>
-                        <a class="active"href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#">Manage Users</a>
-                    </li>
-                    <li>
-                        <a href="#">Manage Permissions</a>
-                    </li>
-                    <li>
-                        <a href="#">Manage Roles</a>
-                    </li>
-                    <li>
-                        <a href="#">Manage Departments</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li>
-                                <a href="#">Page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-
-            </nav>
+            @include('admin.layouts.sidebar')
             <!-- End of Sidebar -->
             <div id="content">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
