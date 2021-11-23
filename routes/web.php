@@ -23,6 +23,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'admin/', 'middleware' => ['role:administrator']], function(){
     Route::get('dashboard', 'AdminController@dashboard')->name('adminDashboard');
+
+    Route::get('manage/users/index', 'AdminController@usersIndex')->name('usersIndex');
+    Route::get('manage/users/create', 'AdminController@usersCreate')->name('usersCreate');
 });
 
 Route::group(['prefix' => 'user/', 'middleware' => ['role:director|manager|employee']], function(){
