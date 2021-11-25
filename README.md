@@ -41,6 +41,11 @@ php artisan migrate
 php artisan db:seed
 ```
 
+## Functions waiting to be fixed
+
+Toggle sidebar doesn't works (video 22): https://www.udemy.com/course/master-laravel-with-vue/learn/lecture/24660334#questions
+
+Auto generate password is broken (video 24): https://www.udemy.com/course/master-laravel-with-vue/learn/lecture/24660334#questions
 
 
 
